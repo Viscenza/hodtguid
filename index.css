@@ -1,0 +1,166 @@
+.card{
+
+    width: 30%;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0,0.2);
+    margin-bottom: 6%;
+    background-color: #FDFEFE;
+    padding-right: 60% ;
+    padding-bottom: -10%;
+    margin-left: 5%;
+}
+
+.card-img-top{
+    width: 300%;
+}
+
+.card-title{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.card-body{
+    padding: 20%;
+}
+
+body{
+    background-color: #ECF0F1;
+}
+
+.arrowBack{
+    padding-top: 2%;
+    padding-left: 1%;
+    width: 26px;
+}
+
+.ui-content{
+    padding-top: 0.5%;
+}
+
+button{
+    color: #2E86C1;
+}
+
+h1{
+    font-size: 25px;
+    margin-bottom: 2%;
+    padding-left: 4%;
+    padding-top: -3%;
+    color: #2E86C1;
+    text-align: center;
+    background-color: #ECF0F1;
+}
+
+.descript{
+    padding-top: 1%;
+    font-size: 16px;
+    font-weight: 200px;
+    color: #2E86C1;
+}
+
+h2{
+    font-size: 25px;
+}
+
+.depart{
+    border: 1px solid #D0D3D4;
+    border-radius: 5px;
+    padding: 3%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0,0.2);
+    color :#2E86C1;
+    padding-right: 2px;
+}
+
+.titre{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2E86C1;
+}
+
+.img-depart{
+    width: 17px;
+    padding-left: 72%;
+    padding-top: 2%;
+}
+
+.img-depart-diff{
+    width: 17px;
+    padding-left: 63%;
+    padding-top: 2%;
+}
+
+.img-depart-diff1{
+    width: 17px;
+    padding-left: 54%;
+    padding-top: 2%;
+}
+
+.img-depart-diff2{
+    width: 17px;
+    padding-left: 70%;
+    padding-top: 2%;
+}
+
+.img-host{
+    margin-bottom: 10%;
+
+}
+
+.nom{
+    font-size: 19px;
+    margin-bottom: 5%;
+    font-weight: 300;
+}
+
+.img-local{
+    width: 24px;
+
+}
+
+.desImg{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.local{
+    margin-bottom: 5%;
+    border: 1px solid #D0D3D4;
+    border-radius: 5px;
+    padding: 3%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0,0.2);
+    color :#2E86C1;
+
+}
+
+.tel{
+    margin-bottom: 5%;
+    border: 1px solid #D0D3D4;
+    border-radius: 5px;
+    padding: 3%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0,0.2);
+    color :#2E86C1;
+}
+
+.spe{
+    padding-left: 3%;
+    font-size: 18px;
+    border: 1px solid #D0D3D4;
+    border-radius: 5px;
+    padding: 3%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0,0.2);
+    color :#2E86C1;}
+
+.img-world{
+    padding-left: 19%;
+    width: 24px;
+}
+
+.sec{
+    border: 1px solid #D0D3D4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0,0.2);
+    color :#2E86C1;
+    padding-bottom: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+}

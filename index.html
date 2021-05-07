@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HostGuid</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="/bootstrap/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="index.css">
+	<script src="js/jquery.js"></script>
+	<script src="_assets/js/index.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+	<!--PAGE accueille-->
+	<div data-role="page" id="ac">
+		<h1>HostGuide</h1>
+		<div data-role="main" class="ui-content">
+			<div class="card ">
+				<a href="#host">
+					<img src="images/hospital.png" class="card-img-top">
+					<div class="card-body">
+						<div class="card-title">Hopital</div>
+					</div>
+				</a>
+			</div>
+			<div class="card">
+				<a href="#departCli">
+					<img src="images/clinique.png" class="card-img-top">
+					<div class="card-body">
+						<div class="card-title">Clinique</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!--PAGE hopital-->
+	<div data-role="page" id="host">
+		<a href="#ac">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="titre">Departement</div>
+			<div class="descript">Choisisez un departement</div>
+			<a href="#hostDakar">
+				<p  class="depart">Dakar <span>
+					<img src="images/right-arrow-angle.png" class="img-depart">
+				</span></p>
+			</a>
+			<a href="#hostRufis">
+				<p  class="depart">Rufisque
+					<span>
+						<img src="images/right-arrow-angle.png" class="img-depart-diff">
+					</span>
+				</p>
+			</a>
+			<a href="#hostGue" >
+				<p  class="depart">Guediawaye
+					<span>
+						<img src="images/right-arrow-angle.png" class="img-depart-diff1">
+					</span>
+				</p>
+			</a>
+			<a href="#hostPik">
+				<p  class="depart">Pikine
+					<span>
+						<img src="images/right-arrow-angle.png" class="img-depart-diff2">
+					</span>
+				</p>
+			</a>
+		</div>
+	</div>
+
+	<!--PAGE hopital dakar-->
+	<div data-role="page" id="hostDakar">
+		<a href="#host">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="titre">Hopitaux</div>
+			<div class="descript">Choisisez un Hopital</div>
+			<a href="#iHpms">
+				<button id="btn">Hopital Phillipe.M.Senghor</button>
+			</a>
+			<a href="#iSamuMun">
+				<button id="btn">Centre de sante SAMU Municipal</button>
+			</a>
+			<a href="#ifann">
+				<button id="btn">Hopital Fann</button>
+			</a>
+			<a href="#iCamara">
+				<button id="btn">Centre de sante Gaspard kamara</button>
+			</a>
+			<a href="#iHostP">
+				<button id="btn">Hopital Principal</button>
+			</a>
+			<a href="#iDantec">
+				<button id="btn">Hopital Aristide Ledantec</button>
+			</a>
+			<a href="#iAn">
+				<button id="btn">Hopital Abass Ndao</button>
+			</a>
+			<a href="#iIp">
+				<button id="btn">Hopital Idrissa Pouye</button>
+			</a>
+		</div>
+	</div>
+
+
+		<!--PAGE hopital de guediawaye-->
+	<div data-role="page" id="hostGue">
+		<a href="#host">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<h3 class="titre">Hopitaux</h3>
+			<p class="descript">Choisisez un Hopital</p>
+			<a href="#iDalal">
+				<button id="btn">Hopital Dalal Jamm</button>
+			</a>
+		</div>
+	</div>
+
+		<!--PAGE hopital de Rufisque-->
+	<div data-role="page" id="hostRufis">
+		<a href="#host">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<h3 class="titre">Hopitaux</h3>
+			<p class="descript">Choisisez un Hopital</p>
+			<a href="#iEli">
+				<button id="btn">Centre hospitalier Elizabeth Diouf</button>
+			</a>
+		</div>
+	</div>
+
+		<!--PAGE hopital de pikine-->
+	<div data-role="page" id="hostPik">
+		<a href="#host">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<h3 class="titre">Hopitaux</h3>
+			<p class="descript">Choisisez un Hopital</p>
+			<a href="#iRoi">
+				<button id="btn">Roi Baudouin</button>
+			</a>
+			<a href="iPik">
+				<button id="btn">Centre hospitalier national de pikine</button>
+			</a>
+		</div>
+	</div>
+
+	<!--page de description d'hopitaux fann-->
+	<div data-role="page" id="ifann">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/CHNU.jpg" class="desImg">
+				<div class="nom">Hopital Fann</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+					Avenue Cheikh Anta Diop
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 869 18 18
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!--page de description d'hopitaux principal-->
+	<div data-role="page" id="iHostP">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/HopitalprincipalDkr.jpg" class="desImg">
+				<div class="nom">Hopital Principal</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+					Rte de la corniche estate
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 839 50 50
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--page de description d'hopitaux leDantec-->
+	<div data-role="page" id="iDantec">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/dantec.jpg" class="desImg">
+				<div class="nom">Hopital Aristide Ledantec</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+					U Dakar
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 823 58 96
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+			<!--page de description d'hopitaux philipe senghor-->
+	<div data-role="page" id="iHpms">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/senghor.jpg" class="desImg">
+				<div class="nom">Hopital Phillipe.M.Senghor</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+						2 rue YF 578
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 820 12 28
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<!--page de description d'hopitaux Centre de sante SAMU Municipal-->
+	<div data-role="page" id="iSamuMun">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/samu.jpg" class="desImg">
+				<div class="nom">>Centre de sante SAMU Municipal</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+					Dakar
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					886 28 12 12
+				</div>
+			</div>
+		</div>
+	</div>
+
+					<!--page de description d'hopitaux Centre de sante Gaspard Camara-->
+	<div data-role="page" id="iCamara">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/ka.jpg" class="desImg">
+				<div class="nom">Centre de sante Gaspard Camara</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+					Dakar
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 864 12 42
+				</div>
+			</div>
+		</div>
+	</div>
+
+				<!--page de description d'hopitaux Maternite Hopital Abass Ndao-->
+	<div data-role="page" id="iAn">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/ndao.jpg" class="desImg">
+				<div class="nom">Hopital Abass Ndao</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+					Avenue Cheikh Anta Diop Dakar fann gueule tapée
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 849 78 00
+				</div>
+			</div>
+		</div>
+	</div>
+
+				<!--page de description d'hopitaux Maternite Hopital Idrissa Pouye-->
+	<div data-role="page" id="iIp">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/grand yoff.jpg" class="desImg">
+				<div class="nom">Hopital Idrissa Pouye</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+					134 Rue GY 530, Dakar
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 86 940 50
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--les hopitaux de guediawaye-->
+						<!--page de description d'hopitaux Hopital Dalal Jamm-->
+	<div data-role="page" id="iDalal">
+		<a href="#hostGue">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/jamm.jpg" class="desImg">
+				<div class="nom">Hopital Dalal Jamm</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+					Dakar
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					inconnu
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!--les hopitaux de Rufisque-->
+		<!--page de description d'hopitaux Hopital Rufisque-->
+	<div data-role="page" id="iEli">
+		<a href="#hostRufis">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/eli.jpg" class="desImg">
+				<div class="nom">Centre hospitalier Elizabeth Diouf</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+					Rufisque
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					inconnu
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<!--les hopitaux de Pikine-->
+
+							<!--page de description d'hopitaux Centre hospitalier national de pikine-->
+	<div data-role="page" id="iPik">
+		<a href="#hostPik">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/grand yoff.jpg" class="desImg">
+				<div class="nom">Centre hospitalier national de pikine</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+					Avenue Cheikh Anta Diop
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 869 18 18
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--page de description d'hopitaux Roi-->
+	<div data-role="page" id="iRoi">
+		<a href="#hostPik">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/CHNU.jpg" class="desImg">
+				<div class="nom">Roi Baudouin</div>
+				<div class="local">			
+					<img src="images/roi.jpg" class="img-local">
+					Avenue Cheikh Anta Diop
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 869 18 18
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--les hopitaux de guediawaye-->
+						<!--page de description d'hopitaux Hopital Roi Baudouin-->
+	<div data-role="page" id="iRoi">
+		<a href="#hostGue">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/grand yoff.jpg" class="desImg">
+				<div class="nom">Roi Baudouin</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+					Dakar
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 837 01 45
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--departement pour les clinique-->
+	<div  data-role="page" id="departCli">
+		<a href="#ac">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="titre">Departement</div>
+			<div class="descript">Choisisez un departement</div>
+			<a href="#cliDakar">
+				<p  class="depart">Dakar <span>
+					<img src="images/right-arrow-angle.png" class="img-depart">
+				</span></p>
+			</a>
+			<a href="#cliRufis">
+				<p  class="depart">Rufisque
+					<span>
+						<img src="images/right-arrow-angle.png" class="img-depart-diff">
+					</span>
+				</p>
+			</a>
+			<a href="#ikan" >
+				<p  class="depart">Guediawaye
+					<span>
+						<img src="images/right-arrow-angle.png" class="img-depart-diff1">
+					</span>
+				</p>
+			</a>
+			<a href="#cliPik">
+				<p  class="depart">Pikine
+					<span>
+						<img src="images/right-arrow-angle.png" class="img-depart-diff2">
+					</span>
+				</p>
+			</a>
+		</div>
+	</div>
+
+	<div data-role="page"id="cliPik">
+		<a href="#departCli">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="titre">Cliniques</div>
+			<div class="descript">Choisisez une clinique</div>
+			<a href="">
+				<button id="btn">Clinique Kellenaba</button>
+			</a>
+			<a href="">
+				<button id="btn">Clinique de pikine</button>
+			</a>
+			<a href="">
+				<button id="btn">Clinique Docteur Ngagne Mbaye</button>
+			</a>
+			<a href="">
+				<button id="btn">Clinique Yaye Marie</button>
+			</a>
+			<a href="">
+				<button id="btn">Clinique Lansar</button>
+			</a>
+		</div>
+	</div>
+
+	<div data-role="page"id="cliRufis">
+	<a href="#departCli">
+			<img src="images/left-arrow.png" class="arrowBack">
+	</a>
+		<div data-role="main" class="ui-content">
+			<div class="titre">Cliniques</div>
+			<div class="descript">Choisisez une clinique</div>
+		<a href="">
+			<button id="btn">Clinique Keur Souleye</button>
+		</a>
+		<a href="#iMai">
+			<button id="btn">Clinique Maimouna</button>
+		</a>
+		<a href="">
+			<button id="btn">Clinique Louis Pasteur</button>
+		</a>
+		<a href="">
+			<button id="btn">Clinique Nabou</button>
+		</a>
+		<a href="">
+			<button id="btn">Clinique Rada </button>
+		</a>
+</div>
+
+		<!--page de description de clinique-->
+	<div data-role="page" id="iMai">
+		<a href="#cliRufis">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/jamm.jpg" class="desImg">
+				<div class="nom">Clinique Maimouna</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+					Route des HLM camp Xavier Lelong, Cite millionnaire, en face des sapeurs-pompiers 
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 836 05 33
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div data-role="page"id="cliGue">
+	<a href="#departCli">
+		<img src="images/left-arrow.png" class="arrowBack">
+	</a>
+	<div data-role="main" class="ui-content">
+		<div class="titre">Cliniques</div>
+		<div class="descript">Choisisez une clinique</div>
+		<a href="">
+			<button id="btn">Clinique Thierno Kandji</button>
+		</a>
+		<a href="">
+			<button id="btn">Clinique Cheikh Mouhamadoul Bachir Mbacké</button>
+		</a>
+</div>
+
+
+<div data-role="page"id="cliDakar">
+	<a href="#departCli">
+		<img src="images/left-arrow.png" class="arrowBack">
+	</a>
+	<div data-role="main" class="ui-content">
+		<div class="titre">Cliniques</div>
+		<div class="descript">Choisisez une clinique</div>
+		<a href="">
+			<button id="btn">Clinique Casahous</button>
+		</a>
+		<a href="">
+			<button id="btn">Les radiologues associés </button>
+		</a>
+		<a href="">
+			<button id="btn">Clinique de la madelaine</button>
+		</a>
+		<a href="">
+			<button id="btn">Clinique de Cap</button>
+		</a>
+		<a href="">
+			<button id="btn">Clinique Asbef</button>
+		</a>
+		
+	</div>
+</div>
+	
+
+
+
+</body>
+</html>
