@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HostGuid</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="/bootstrap/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="index.css">
+	<script src="js/jquery.js"></script>
+	<script src="_assets/js/index.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+	<!--PAGE accueille-->
+	<div data-role="page" id="ac">
+		<h1>HostGuid</h1>
+		<div data-role="main" class="ui-content">
+			<div class="card ">
+				<a href="#host">
+					<img src="images/hospital.png" class="card-img-top">
+					<div class="card-body">
+						<div class="card-title">Hopital</div>
+					</div>
+				</a>
+			</div>
+			<div class="card">
+				<a href="#departCli">
+					<img src="images/clinique.png" class="card-img-top">
+					<div class="card-body">
+						<div class="card-title">Clinique</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!--PAGE hopital-->
+	<div data-role="page" id="host">
+		<a href="#ac">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="titre">Departement</div>
+			<div class="descript">Choisisez un departement</div>
+			<a href="#hostDakar">
+				<p  class="depart">Dakar <span>
+					<img src="images/right-arrow-angle.png" class="img-depart">
+				</span></p>
+			</a>
+			<a href="#hostRufis">
+				<p  class="depart">Rufisque
+					<span>
+						<img src="images/right-arrow-angle.png" class="img-depart-diff">
+					</span>
+				</p>
+			</a>
+			<a href="#hostGue" >
+				<p  class="depart">Guediawaye
+					<span>
+						<img src="images/right-arrow-angle.png" class="img-depart-diff1">
+					</span>
+				</p>
+			</a>
+			<a href="#hostPik">
+				<p  class="depart">Pikine
+					<span>
+						<img src="images/right-arrow-angle.png" class="img-depart-diff2">
+					</span>
+				</p>
+			</a>
+		</div>
+	</div>
+
+	<!--PAGE hopital dakar-->
+	<div data-role="page" id="hostDakar">
+		<a href="#host">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="titre">Hopitaux</div>
+			<div class="descript">Choisisez un Hopital</div>
+			<a href="#iHpms">
+				<button id="btn">Hopital Phillipe.M.Senghor</button>
+			</a>
+			<a href="#iSamuMun">
+				<button id="btn">Centre de sante SAMU Municipal</button>
+			</a>
+			<a href="#ifann">
+				<button id="btn">Hopital Fann</button>
+			</a>
+			<a href="#iCamara">
+				<button id="btn">Centre de sante Gaspard kamara</button>
+			</a>
+			<a href="#iHostP">
+				<button id="btn">Hopital Principal</button>
+			</a>
+			<a href="#iDantec">
+				<button id="btn">Hopital Aristide Ledantec</button>
+			</a>
+			<a href="#iAn">
+				<button id="btn">Hopital Abass Ndao</button>
+			</a>
+			<a href="#iIp">
+				<button id="btn">Hopital Idrissa Pouye</button>
+			</a>
+		</div>
+	</div>
+
+
+		<!--PAGE hopital de guediawaye-->
+	<div data-role="page" id="hostGue">
+		<a href="#host">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<h3 class="titre">Hopitaux</h3>
+			<p class="descript">Choisisez un Hopital</p>
+			<a href="#iDalal">
+				<button id="btn">Hopital Dalal Jamm</button>
+			</a>
+			<a href="#iCen">
+				<button id="btn">Centre de sante de camberene</button>
+			</a>
+			<a href="#iGol">
+				<button id="btn">Dispensaire golf</button>
+			</a>
+		</div>
+	</div>
+
+		<!--PAGE hopital de Rufisque-->
+	<div data-role="page" id="hostRufis">
+		<a href="#host">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<h3 class="titre">Hopitaux</h3>
+			<p class="descript">Choisisez un Hopital</p>
+			<a href="#iEli">
+				<button id="btn">Elizabeth Diouf</button>
+			</a>
+			<a href="#iCentral">
+				<button id="btn">Dispensaire centrale</button>
+			</a>
+			<a href="#iYousou">
+				<button id="btn">Youssou Mbargane Diop </button>
+			</a>
+		</div>
+	</div>
+
+		<!--PAGE hopital de pikine-->
+	<div data-role="page" id="hostPik">
+		<a href="#host">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<h3 class="titre">Hopitaux</h3>
+			<p class="descript">Choisisez un Hopital</p>
+			<a href="#iRoi">
+				<button id="btn">Roi Baudouin</button>
+			</a>
+			<a href="#iPik">
+				<button id="btn">Hopital de pikine</button>
+			</a>
+			<a href="#iLazar">
+				<button id="btn">Centre de sante lazar</button>
+			</a>
+
+		</div>
+	</div>
+
+	<!--page de description d'hopitaux fann-->
+	<div data-role="page" id="ifann">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/CHNU.jpg" class="desImg">
+				<div class="nom">Hopital Fann</div>
+				<a href="https://urlz.fr/fFOi">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						Avenue Cheikh Anta Diop
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 869 18 18
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">Chimiothérapie</span></li>
+						<li><span class="spe1">Neurologie</span></li>
+						<li><span class="spe1">Psychologie</span></li>
+						<li><span class="spe1">ophtalmologie</span></li>
+						<li><span class="spe1">réeducation</span></li>
+						<li><span class="spe1">Pediatrie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">kinésithérapie</span></li>
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">neonatalogie</span></li>
+						<li><span class="spe1">Toxicologie</span></li>
+						<li><span class="spe1">Confection de prothèses</span></li>
+						<li><span class="spe1">Confection d'othèses</span></li>
+						<li><span class="spe1">Cardiologie</span></li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!--page de description d'hopitaux principal-->
+	<div data-role="page" id="iHostP">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/HopitalprincipalDkr.jpg" class="desImg">
+				<div class="nom">Hopital Principal</div>
+				<a href="https://urlz.fr/fFNy">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						Rte de la corniche estate
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 839 50 50
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h6>Specialite</h6>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">Chimiothérapie</span></li>
+						<li><span class="spe1">Biochimie</span></li>
+						<li><span class="spe1">Neurologie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">ORL</span></li>
+						<li><span class="spe1">imagerie medicaale</span></li>
+						<li><span class="spe1">Parasitologie</span></li>
+						<li><span class="spe1">Mycologie</span></li>
+						<li><span class="spe1">Gynecologie</span></li>
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">Obstetrique</span></li>
+						<li><span class="spe1">Infectiologie</span></li>
+						<li><span class="spe1">kinésithérapie</span></li>
+						<li><span class="spe1">Chirurgie dentaire</span></li>
+						<li><span class="spe1">Gastero anterologie</span></li>
+						<li><span class="spe1">Labo biochimie</span></li>
+					</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--page de description d'hopitaux leDantec-->
+	<div data-role="page" id="iDantec">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/dantec.jpg" class="desImg">
+				<div class="nom">Hopital Aristide Ledantec</div>
+				<a href="https://urlz.fr/fFOk">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						Dakar
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 823 58 96
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">Chimiothérapie</span></li>
+						<li><span class="spe1">Biochimie</span></li>
+						<li><span class="spe1">Neurologie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">ORL</span></li>
+						<li><span class="spe1">imagerie medicaale</span></li>
+						<li><span class="spe1">Parasitologie</span></li>
+						<li><span class="spe1">Mycologie</span></li>
+						<li><span class="spe1">Gynecologie</span></li>
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">Obstetrique</span></li>
+						<li><span class="spe1">Infectiologie</span></li>
+						<li><span class="spe1">kinésithérapie</span></li>
+						<li><span class="spe1">Chirurgie dentaire</span></li>
+						<li><span class="spe1">Gastero anterologie</span></li>
+						<li><span class="spe1">Labo biochimie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">Cardiologie</span></li>
+						<li><span class="spe1">Osteopathe</span></li>
+						<li><span class="spe1">nephrologie</span></li>
+						<li><span class="spe1">urologie</span></li>
+						<li><span class="spe1">angiographie</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+			<!--page de description d'hopitaux philipe senghor-->
+	<div data-role="page" id="iHpms">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/senghor.jpg" class="desImg">
+				<div class="nom">Hopital Phillipe.M.Senghor</div>
+				<a href="https://urlz.fr/fFNJ">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+							2 rue YF 578
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 820 12 28
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">Gynecologie</span></li>
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">Obstetrique</span></li>
+						<li><span class="spe1">ORL</span></li>
+						<li><span class="spe1">neonatalogie</span></li>
+						<li><span class="spe1">Chirurgie dentaire</span></li>
+						<li><span class="spe1">Gastero anterologie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">premiers soins </span></li>
+						
+					</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<!--page de description d'hopitaux Centre de sante SAMU Municipal-->
+	<div data-role="page" id="iSamuMun">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/samu.jpg" class="desImg">
+				<div class="nom">Centre de sante SAMU Municipal</div>
+				<a href="https://urlz.fr/fFOb">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						Dakar
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					886 28 12 12
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">Soins d'urgence</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+					<!--page de description d'hopitaux Centre de sante Gaspard Camara-->
+	<div data-role="page" id="iCamara">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/ka.jpg" class="desImg">
+				<div class="nom">Centre de sante Gaspard Camara</div>
+				<a href="https://urlz.fr/fFOc">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						Dakar
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 864 12 42
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false"><li><span class="spe1">Gynecologie</span></li>
+						<li><span class="spe1">Gynecologie</span></li>
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">Obstetrique</span></li>
+						<li><span class="spe1">ORL</span></li>
+						<li><span class="spe1">neonatalogie</span></li>
+						<li><span class="spe1">Chirurgie dentaire</span></li>
+						<li><span class="spe1">Gastero anterologie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">premiers soins </span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+				<!--page de description d'hopitaux7 Hopital Abass Ndao-->
+	<div data-role="page" id="iAn">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/ndao.jpg" class="desImg">
+				<div class="nom">Hopital Abass Ndao</div>
+				<a href="https://urlz.fr/fFOe">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						Avenue Cheikh Anta Diop Dakar fann gueule tapée
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 849 78 00
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">Maternite</span></li>
+						<li><span class="spe1">urologie</span></li>
+						<li><span class="spe1">cardiologie</span></li>
+						<li><span class="spe1">réeducation</span></li>
+						<li><span class="spe1">ophtalmologie</span></li>
+						<li><span class="spe1">néonatalogie</span></li>
+						<li><span class="spe1">Labo biochimie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">Cardiologie</span></li>
+						<li><span class="spe1">Osteopathe</span></li>
+						<li><span class="spe1">nephrologie</span></li>
+						<li><span class="spe1">urologie</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+				<!--page de description d'hopitaux Maternite Hopital Idrissa Pouye-->
+	<div data-role="page" id="iIp">
+		<a href="#hostDakar">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/grand yoff.jpg" class="desImg">
+				<div class="nom">Hopital Idrissa Pouye</div>
+				<a href="https://urlz.fr/fFOg">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						134 Rue GY 530, Dakar
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 86 940 50
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">gynecoologie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">imagerie médicale</span></li>
+						<li><span class="spe1">Pediatrie</span></li>
+						<li><span class="spe1">angiographie</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--les hopitaux de guediawaye-->
+						<!--page de description d'hopitaux Hopital Dalal Jamm-->
+	<div data-role="page" id="iDalal">
+		<a href="#hostGue">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/jamm.jpg" class="desImg">
+				<div class="nom">Hopital Dalal Jamm</div>
+				<a href="https://urlz.fr/fFOD">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						Dakar
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					inconnu
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">Chimiothérapie</span></li>
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">imagerie medicale</span></li>
+						<li><span class="spe1">neonatalogie</span></li>
+						<li><span class="spe1">Chimiothérapie</span></li>
+						<li><span class="spe1">Biochimie</span></li>
+						<li><span class="spe1">Neurologie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">ORL</span></li>
+						<li><span class="spe1">imagerie medicaale</span></li>
+						<li><span class="spe1">Parasitologie</span></li>
+						<li><span class="spe1">Mycologie</span></li>
+						<li><span class="spe1">Gynecologie</span></li>
+						<li><span class="spe1">Obstetrique</span></li>
+						<li><span class="spe1">Infectiologie</span></li>
+						<li><span class="spe1">kinésithérapie</span></li>
+						<li><span class="spe1">Chirurgie dentaire</span></li>
+						<li><span class="spe1">Gastero anterologie</span></li>
+						<li><span class="spe1">Labo biochimie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">Cardiologie</span></li>
+						<li><span class="spe1">Osteopathe</span></li>
+						<li><span class="spe1">nephrologie</span></li>
+						<li><span class="spe1">urologie</span></li>
+						<li><span class="spe1">angiographie</span></li>
+						<li><span class="spe1">Rhumatologie</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="iCen">
+		<a href="#hostGue">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/cambrene.jpg" class="desImg">
+				<div class="nom">Centre de sante de camberene</div>
+				<a href="https://urlz.fr/fFOG">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						Dakar
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					77 518 45 40
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">pediatrie</span></li>
+						<li><span class="spe1">gynecoologie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">Maternité</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!--les hopitaux de Rufisque-->
+		<!--page de description d'hopitaux Hopital Rufisque-->
+	<div data-role="page" id="iEli">
+		<a href="#hostRufis">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/eli.jpg" class="desImg">
+				<div class="nom">Centre hospitalier Elizabeth Diouf</div>
+				<a href="https://urlz.fr/fFOP">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						Rufisque
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					inconnu
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">Gynecologie</span></li>
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">ORL</span></li>
+						<li><span class="spe1">gynecoologie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">Pediatrie</span></li>
+						<li><span class="spe1">neonatalogie</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="iCentral">
+		<a href="#hostRufis">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/ruf.jpeg" class="desImg">
+				<div class="nom">Dispensaire centrale de Rufisque</div>
+				<a href="https://urlz.fr/fFOY">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						Dakar
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					inconnu
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">ORL</span></li>
+						<li><span class="spe1">gynecoologie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">Pediatrie</span></li>
+						<li><span class="spe1">neonatalogie</span></li>
+					</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="iYousou">
+		<a href="#hostRufis">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/youssou.jpg" class="desImg">
+				<div class="nom">hospitalier Youssou Mbargane Diop</div>
+				<a href="https://urlz.fr/fFP9">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						Dakar
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 836 22 99
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">gynecoologie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">Pediatrie</span></li>
+						<li><span class="spe1">neonatalogie</span></li>
+						<li><span class="spe1">planification familiale</span></li>
+					</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--les hopitaux de Pikine-->
+							<!--page de description d'hopitaux Centre hospitalier national de pikine-->
+	<div data-role="page" id="iPik">
+		<a href="#hostPik">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/piki.jpg" class="desImg">
+				<div class="nom">Hopital de pikine</div>
+				<a href="https://urlz.fr/fFPd">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						Avenue Cheikh Anta Diop
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 869 18 18
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">gynecologie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">Maternité</span></li>
+						<li><span class="spe1">Pediatrie</span></li>
+						<li><span class="spe1">neonatalogie</span></li>
+						<li><span class="spe1">planification familiale</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--page de description d'hopitaux Roi-->
+	<div data-role="page" id="iRoi">
+		<a href="#hostPik">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/roi.jpg" class="desImg">
+				<div class="nom">Roi Baudouin</div>
+				<a href="https://urlz.fr/fFPf">
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						Avenue Cheikh Anta Diop
+					</div>
+				</a>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 869 18 18
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">Labo biochimie</span></li>
+						<li><span class="spe1">Dermatologie</span></li>
+						<li><span class="spe1">Cardiologie</span></li>
+						<li><span class="spe1">imagerie medicale</span></li>
+						<li><span class="spe1">neonatalogie</span></li>
+						<li><span class="spe1">planification familiale</span></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--page de description d'hopitaux Lazar-->
+	<div data-role="page" id="iLazar">
+		<a href="#hostPik">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/roi.jpg" class="desImg">
+				<div class="nom">Centre de sante Lazar</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+					Avenue Cheikh Anta Diop
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 83 622 99
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">inconnu</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--departement pour les social-->
+	<div  data-role="page" id="departCli">
+		<a href="#ac">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="titre">Departement</div>
+			<div class="descript">Choisisez un departement</div>
+			<a href="#cliDak">
+				<p  class="depart">Dakar <span>
+					<img src="images/right-arrow-angle.png" class="img-depart">
+				</span></p>
+			</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="cliDak">
+		<a href="#departCli">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="titre">Cliniques</div>
+			<div class="descript">Choisisez une clinique</div>
+			<a href="#iCasa">
+				<button id="btn">Clinique Casahous</button>
+			</a>
+			<a href="#iRa">
+				<button id="btn">Les radiologues associés </button>
+			</a>
+			<a href="#iMade">
+				<button id="btn">Clinique de la madelaine</button>
+			</a>
+			<a href="#iCap">
+				<button id="btn">Clinique de Cap</button>
+			</a>
+			<a href="#iAsbef">
+				<button id="btn">Clinique Asbef</button>
+			</a>
+			
+		</div>
+	</div>
+
+	<div data-role="page"id="cliGue">
+		<a href="#departCli">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="titre">Cliniques</div>
+			<div class="descript">Choisisez une clinique</div>
+			<a href="#iKan">
+				<button id="btn">Clinique Thierno Kandji</button>
+			</a>
+			<a href="#iBachir">
+				<button id="btn">Cheikh Mouhamadoul Bachir Mbacké</button>
+			</a>
+		</div>
+	</div>
+
+	<div data-role="page"id="cliPik">
+		<a href="#departCli">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="titre">Cliniques</div>
+			<div class="descript">Choisisez une clinique</div>
+			<a href="#iKell">
+				<button id="btn">Clinique Kellenaba</button>
+			</a>
+			<a href="#iPiki">
+				<button id="btn">Clinique de pikine</button>
+			</a>
+			<a href="#iNga">
+				<button id="btn">Clinique Docteur Ngagne Mbaye</button>
+			</a>
+			<a href="#iYa">
+				<button id="btn">Clinique Yaye Marie</button>
+			</a>
+			<a href="#iLan">
+				<button id="btn">Clinique Lansar</button>
+			</a>
+		</div>
+	</div>
+
+	<div data-role="page"id="cliRufis">
+	<a href="#departCli">
+			<img src="images/left-arrow.png" class="arrowBack">
+	</a>
+		<div data-role="main" class="ui-content">
+			<div class="titre">Cliniques</div>
+			<div class="descript">Choisisez une clinique</div>
+		<a href="#iSouleye">
+			<button id="btn">Clinique Keur Souleye</button>
+		</a>
+		<a href="#iMai">
+			<button id="btn">Clinique Maimouna</button>
+		</a>
+		<a href="#iPast">
+			<button id="btn">Clinique Louis Pasteur</button>
+		</a>
+		<a href="#iNabou">
+			<button id="btn">Clinique Nabou</button>
+		</a>
+		<a href="#iRada">
+			<button id="btn">Clinique Rada </button>
+		</a>
+		</div>
+	</div>
+
+		<!--page de description de clinique-->
+	<!--pour dakar-->
+	<div data-role="page" id="iCasa">
+		<a href="#cliDak">
+			<img src="images/left-arrow.png" class="arrowBack">
+		</a>
+		<div data-role="main" class="ui-content">
+			<div class="sec">
+				<img src="images/casa.jpeg" class="desImg">
+				<div class="nom">Clinique Casahous</div>
+				<div class="local">			
+					<img src="images/placeholder.png" class="img-local">
+					5 rue de Thiong, Dakar
+				</div>
+				<div class="tel">
+					<img src="images/phone.png" class="img-local">
+					33 889 72 00
+				</div>
+				<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+					<h4>Specialite</h4>
+					<ul data-role="listview" data-inset="false">
+						<li><span class="spe1">Medecime generale</span> </li>
+						<li><span class="spe1">Chirugie</span></li>	
+						<li><span class="spe1">Gerpntologie</span></li>	
+						<li><span class="spe1">Obstetrique</span></li>	
+						<li><span class="spe1">service de reanimation</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div data-role="page" id="iRa">
+			<a href="#cliDak">
+				<img src="images/left-arrow.png" class="arrowBack">
+			</a>
+			<div data-role="main" class="ui-content">
+				<div class="sec">
+					<div class="nom">Les radiologues associés</div>
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						41bis, rue Carnot,Dakar
+					</div>
+					<div class="tel">
+						<img src="images/phone.png" class="img-local">
+						33 821 44 29
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+						<h4>Specialite</h4>
+						<ul data-role="listview" data-inset="false">
+							<li><span class="spe1">Examen digestif</span></li>
+							<li><span class="spe1">Examen urinaires</span></li>
+							<li><span class="spe1">Scanner</span></li>
+							<li><span class="spe1">IRM</span></li>
+							<li><span class="spe1">Examens gynecoologiques</span></li>
+							<li><span class="spe1">Ecographie</span></li>
+							<li><span class="spe1">Syneologie</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div data-role="page" id="iMade">
+			<a href="#cliDak">
+				<img src="images/left-arrow.png" class="arrowBack">
+			</a>
+			<div data-role="main" class="ui-content">
+				<div class="sec">
+					<div class="nom">Clinique de la madelaine</div>
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						18 avenue des Diambarsb
+					</div>
+					<div class="tel">
+						<img src="images/phone.png" class="img-local">
+						33 889 94 70
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+						<h4>Specialite</h4>
+						<ul data-role="listview" data-inset="false">
+							<li><span class="spe1">Pediatrie</span></li>
+							<li><span class="spe1">Laboratoire</span></li>
+							<li><span class="spe1">Esthetique</span></li>
+							<li><span class="spe1">imagerie</span></li>
+							<li><span class="spe1">Chirugie</span></li>
+							<li><span class="spe1">gynecoologie</span></li>
+							<li><span class="spe1">Obstetrique</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div data-role="page" id="iCap">
+			<a href="#cliDak">
+				<img src="images/left-arrow.png" class="arrowBack">
+			</a>
+			<div data-role="main" class="ui-content">
+				<div class="sec">
+					<img src="images/cap.jpeg" class="desImg">
+					<div class="nom">Clinique de Cap</div>
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						Av. Pasteur,Dakar
+					</div>
+					<div class="tel">
+						<img src="images/phone.png" class="img-local">
+						33 889 02 02
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+						<h4>Specialite</h4>
+						<ul data-role="listview" data-inset="false">
+							<li><span class="spe1">Medecine Generale</span></li>
+							<li><span class="spe1">Gynecologie Obstetrique</span></li>
+							<li><span class="spe1">Cardiologie</span></li>
+							<li><span class="spe1">Pneumologie</span></li>
+							<li><span class="spe1">Allergologie</span></li>
+							<li><span class="spe1">Neurologie</span></li>
+							<li><span class="spe1">Ophtalmologie</span></li>
+							<li><span class="spe1">Pediatrie</span></li>
+							<li><span class="spe1">Dermatologie</span></li>
+							<li><span class="spe1">Proctologie</span></li>
+							<li><span class="spe1">Orthopedie</span></li>
+							<li><span class="spe1">Traumatologie</span></li>
+							<li><span class="spe1">Rhumatologie</span></li>
+							<li><span class="spe1">Radiologie</span></li>
+							<li><span class="spe1">Anesthesie</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div data-role="page" id="iAsbef">
+			<a href="#cliDak">
+				<img src="images/left-arrow.png" class="arrowBack">
+			</a>
+			<div data-role="main" class="ui-content">
+				<div class="sec">
+					<img src="images/asbef.jpeg" class="desImg">
+					<div class="nom">Clinique Asbef</div>
+					<div class="local">			
+						<img src="images/placeholder.png" class="img-local">
+						cite Front de terre,Dakar
+					</div>
+					<div class="tel">
+						<img src="images/phone.png" class="img-local">
+						33 824 25 62
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+						<h4>Specialite</h4>
+						<ul data-role="listview" data-inset="false">
+							<li><span class="spe1">Inconnu</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+</div>
+</div>
+
+</body>
+</html>
